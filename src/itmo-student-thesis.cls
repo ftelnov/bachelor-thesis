@@ -754,16 +754,20 @@
 
 \newcommand{\thesupervisor}{\@iflfe{\thesupervisor@en}{\thesupervisor@ru}}
 \newcommand{\thesupervisorshort}{\@iflfe{\thesupervisorshort@en}{\thesupervisorshort@ru}}
-\newcommand{\thesupervisordegree}{\@iflfe{\thesupervisordegree@en}{\thesupervisordegree@ru}}
-\newcommand{\thesupervisorwork}{\@iflfe{\thesupervisorwork@en}{\thesupervisorwork@ru}}
 
-\newcommand{\supervisor}[4]{\@iflfe{\newcommand{\thesupervisor@en}{#1}\newcommand{\thesupervisorshort@en}{#2}\newcommand{\thesupervisordegree@en}{#3}\newcommand{\thesupervisorwork@en}{#4}}
-	{\newcommand{\thesupervisor@ru}{#1}\newcommand{\thesupervisorshort@ru}{#2}\newcommand{\thesupervisordegree@ru}{#3}\newcommand{\thesupervisorwork@ru}{#4}}}
-
+\newcommand{\supervisor}[2]{\@iflfe{\newcommand{\thesupervisor@en}{#1}\newcommand{\thesupervisorshort@en}{#2}}
+	{\newcommand{\thesupervisor@ru}{#1}\newcommand{\thesupervisorshort@ru}{#2}}}
 %%% \secretary
 
 \newcommand{\thesecretary}{\@iflfe{\thesecretary@en}{\thesecretary@ru}}
 \newcommand{\secretary}[1]{\@iflfe{\newcommand{\thesecretary@en}{#1}}{\newcommand{\thesecretary@ru}{#1}}}
+
+%%% curator
+\newcommand{\thecurator}{\@iflfe{\thecurator@en}{\thecurator@ru}}
+\newcommand{\thecuratorshort}{\@iflfe{\thecuratorshort@en}{\thecuratorshort@ru}}
+
+\newcommand{\curator}[2]{\@iflfe{\newcommand{\thecurator@en}{#1}\newcommand{\thecuratorshort@en}{#2}}
+	{\newcommand{\thecurator@ru}{#1}\newcommand{\thecuratorshort@ru}{#2}}}
 
 %%% \publishyear
 
@@ -875,8 +879,8 @@
 \newcommand{\@strings@ThesisTitleLong@ru}{Наименование темы ВКР}
 \newcommand{\@strings@ThesisTitleLong}{\@iflfe{\@strings@ThesisTitleLong@en}{\@strings@ThesisTitleLong@ru}}
 
-\newcommand{\@strings@Author@en}{Author}
-\newcommand{\@strings@Author@ru}{Автор}
+\newcommand{\@strings@Author@en}{Student}
+\newcommand{\@strings@Author@ru}{Выполнил}
 \newcommand{\@strings@Author}{\@iflfe{\@strings@Author@en}{\@strings@Author@ru}}
 
 \newcommand{\@strings@SubjectArea@en}{Subject area}
@@ -1067,13 +1071,12 @@
 		{\centering\MakeUppercase{\thetitle}\par}
 		\vspace{0cm plus 1fill minus 0cm}
 		{\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.5}
-			\noindent\begin{tabularx}{\textwidth}{Xl}
-				 & \@strings@Author: \theauthor \hfilll \signatureplace                                               \\
-				 & \@strings@SubjectArea:\;
-				\begin{minipage}[t]{0.4\textwidth}\begin{flushleft}\thespecialty\end{flushleft}\end{minipage}                            \\
-				 & \@strings@DegreeLevel: \@strings@DegreeName                                                        \\
-				 & \@strings@ThesisSupervisorLong: \thesupervisorshort, \thesupervisordegree~ \hfilll \signatureplace \\
-			\end{tabularx}\par}
+			\noindent\hspace*{0.5\textwidth}\begin{minipage}[t]{0.5\textwidth}
+				\@strings@Author: \theauthor\par
+				\@strings@ThesisSupervisorLong: \thesupervisor \par
+				Куратор: \thecurator \par
+			\end{minipage}
+		}
 		\vspace{0cm plus 1fill minus 0cm}
 		\begin{center}\thecity\par\theyear\@strings@yearend\end{center}
 	\end{titlepage}}
