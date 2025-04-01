@@ -122,6 +122,8 @@
 \newcommand*{\@tablecontinuation}[1]{Table~#1, continued}
 \newcommand*{\@chaptername}{CHAPTER}
 \newcommand*{\@introductionname}{INTRODUCTION}
+\newcommand*{\@shortensname}{SHORTENS}
+\newcommand*{\@terminologyname}{TERMINOLOGY}
 \newcommand*{\@conclusionname}{CONCLUSION}
 \newcommand*{\@appendixname}{APPENDIX}
 \newcommand*{\@appendixcounter}{\Alph{chapter}}
@@ -151,6 +153,8 @@
 	\renewcommand*{\@tablecontinuation}[1]{Table~#1, continued}%
 	\renewcommand*{\@chaptername}{CHAPTER}%
 	\renewcommand*{\@introductionname}{INTRODUCTION}%
+	\renewcommand*{\@shortensname}{SHORTENS}
+	\renewcommand*{\@terminologyname}{TERMINOLOGY}
 	\renewcommand*{\@conclusionname}{CONCLUSION}%
 	\renewcommand*{\@appendixname}{APPENDIX}%
 	\renewcommand*{\@appendixcounter}{\Alph{chapter}}%
@@ -180,6 +184,8 @@
 	\renewcommand*{\@tablecontinuation}[1]{Продолжение таблицы~#1}%
 	\renewcommand*{\@chaptername}{ГЛАВА}%
 	\renewcommand*{\@introductionname}{ВВЕДЕНИЕ}%
+	\renewcommand*{\@shortensname}{СПИСОК СОКРАЩЕНИЙ И УСЛОВНЫХ ОБОЗНАЧЕНИЙ}
+	\renewcommand*{\@terminologyname}{ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ}
 	\renewcommand*{\@conclusionname}{ЗАКЛЮЧЕНИЕ}%
 	\renewcommand*{\@appendixname}{ПРИЛОЖЕНИЕ}%
 	\renewcommand*{\@appendixcounter}{\Asbukx{chapter}}%
@@ -623,6 +629,16 @@
 \newcommand{\startprefacepage}{%
 	\chapter*{\@introductionname}\label{chapter:introduction}%
 	\addcontentsline{toc}{chapter}{\@introductionname}}
+
+\newcommand{\startshortenspage}{%
+	\chapter*{\@shortensname}\label{chapter:shortens}%
+	\addcontentsline{toc}{chapter}{\@shortensname}}
+
+
+\newcommand{\startterminologypage}{%
+	\chapter*{\@terminologyname}\label{chapter:terminology}%
+	\addcontentsline{toc}{chapter}{\@terminologyname}}
+
 \newcommand{\startconclusionpage}{%
 	\chapter*{\@conclusionname}\label{chapter:conclusion}%
 	\addcontentsline{toc}{chapter}{\@conclusionname}}
