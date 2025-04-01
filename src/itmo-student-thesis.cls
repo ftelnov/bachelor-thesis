@@ -27,13 +27,13 @@
 \ProcessOptionsX\relax
 
 \if@shouldusexelatex
-    \RequirePackage{fontspec}
-    \defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
-    \setmainfont[Ligatures={TeX,Historic}]{Times New Roman}
-    \setsansfont{Arial}
-    \setmonofont{Courier New}
+	\RequirePackage{fontspec}
+	\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
+	\setmainfont[Ligatures={TeX,Historic}]{Times New Roman}
+	\setsansfont{Arial}
+	\setmonofont{Courier New}
 \else
-    \RequirePackage{paratype}
+	\RequirePackage{paratype}
 \fi
 
 %% Конфигурируем babel
@@ -143,61 +143,61 @@
 \newcommand*{\@theorem@example}{Example}
 
 \addto{\captionsenglish}{%
-\renewcommand{\@iflfe}[2]{#1}%
-\renewcommand*{\figurename}{Figure}%
-\renewcommand*{\contentsname}{Contents}%
-\renewcommand*{\labelenumi}{\alph{enumi})}%
-\renewcommand*{\theenumi}{\alph{enumi}}%
-\renewcommand*{\@tablecontinuation}[1]{Table~#1, continued}%
-\renewcommand*{\@chaptername}{CHAPTER}%
-\renewcommand*{\@introductionname}{INTRODUCTION}%
-\renewcommand*{\@conclusionname}{CONCLUSION}%
-\renewcommand*{\@appendixname}{APPENDIX}%
-\renewcommand*{\@appendixcounter}{\Alph{chapter}}%
-\renewcommand*{\@proofname}{Proof}%
-\renewcommand*{\@referencesname}{REFERENCES}%
-\renewcommand*{\@chapterconclusion}{Conclusions on Chapter}%
-\renewcommand*{\@listingname}{Listing}%
-\renewcommand*{\@theorem@theorem}{Theorem}%
-\renewcommand*{\@theorem@proposition}{Proposition}%
-\renewcommand*{\@theorem@corollary}{Corollary}%
-\renewcommand*{\@theorem@lemma}{Lemma}%
-\renewcommand*{\@theorem@question}{Question}%
-\renewcommand*{\@theorem@conjecture}{Conjecture}%
-\renewcommand*{\@theorem@assumption}{Assumption}%
-\renewcommand*{\@theorem@definition}{Definition}%
-\renewcommand*{\@theorem@notation}{Notation}%
-\renewcommand*{\@theorem@condition}{Condition}%
-\renewcommand*{\@theorem@example}{Example}%
+	\renewcommand{\@iflfe}[2]{#1}%
+	\renewcommand*{\figurename}{Figure}%
+	\renewcommand*{\contentsname}{Contents}%
+	\renewcommand*{\labelenumi}{\alph{enumi})}%
+	\renewcommand*{\theenumi}{\alph{enumi}}%
+	\renewcommand*{\@tablecontinuation}[1]{Table~#1, continued}%
+	\renewcommand*{\@chaptername}{CHAPTER}%
+	\renewcommand*{\@introductionname}{INTRODUCTION}%
+	\renewcommand*{\@conclusionname}{CONCLUSION}%
+	\renewcommand*{\@appendixname}{APPENDIX}%
+	\renewcommand*{\@appendixcounter}{\Alph{chapter}}%
+	\renewcommand*{\@proofname}{Proof}%
+	\renewcommand*{\@referencesname}{REFERENCES}%
+	\renewcommand*{\@chapterconclusion}{Conclusions on Chapter}%
+	\renewcommand*{\@listingname}{Listing}%
+	\renewcommand*{\@theorem@theorem}{Theorem}%
+	\renewcommand*{\@theorem@proposition}{Proposition}%
+	\renewcommand*{\@theorem@corollary}{Corollary}%
+	\renewcommand*{\@theorem@lemma}{Lemma}%
+	\renewcommand*{\@theorem@question}{Question}%
+	\renewcommand*{\@theorem@conjecture}{Conjecture}%
+	\renewcommand*{\@theorem@assumption}{Assumption}%
+	\renewcommand*{\@theorem@definition}{Definition}%
+	\renewcommand*{\@theorem@notation}{Notation}%
+	\renewcommand*{\@theorem@condition}{Condition}%
+	\renewcommand*{\@theorem@example}{Example}%
 }
 
 \addto{\captionsrussian}{%
-\renewcommand{\@iflfe}[2]{#2}%
-\renewcommand*{\figurename}{Рисунок}%
-\renewcommand*{\contentsname}{Содержание}%
-\renewcommand*{\labelenumi}{\asbukx{enumi})}%
-\renewcommand*{\theenumi}{\asbukx{enumi}}%
-\renewcommand*{\@tablecontinuation}[1]{Продолжение таблицы~#1}%
-\renewcommand*{\@chaptername}{ГЛАВА}%
-\renewcommand*{\@introductionname}{ВВЕДЕНИЕ}%
-\renewcommand*{\@conclusionname}{ЗАКЛЮЧЕНИЕ}%
-\renewcommand*{\@appendixname}{ПРИЛОЖЕНИЕ}%
-\renewcommand*{\@appendixcounter}{\Asbukx{chapter}}%
-\renewcommand*{\@proofname}{Доказательство}%
-\renewcommand*{\@referencesname}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}%
-\renewcommand*{\@chapterconclusion}{Выводы по главе}%
-\renewcommand*{\@listingname}{Листинг}%
-\renewcommand*{\@theorem@theorem}{Теорема}%
-\renewcommand*{\@theorem@proposition}{Утверждение}%
-\renewcommand*{\@theorem@corollary}{Следствие}%
-\renewcommand*{\@theorem@lemma}{Лемма}%
-\renewcommand*{\@theorem@question}{Вопрос}%
-\renewcommand*{\@theorem@conjecture}{Гипотеза}%
-\renewcommand*{\@theorem@assumption}{Предположение}%
-\renewcommand*{\@theorem@definition}{Определение}%
-\renewcommand*{\@theorem@notation}{Обозначение}%
-\renewcommand*{\@theorem@condition}{Условие}%
-\renewcommand*{\@theorem@example}{Пример}%
+	\renewcommand{\@iflfe}[2]{#2}%
+	\renewcommand*{\figurename}{Рисунок}%
+	\renewcommand*{\contentsname}{Содержание}%
+	\renewcommand*{\labelenumi}{\asbukx{enumi})}%
+	\renewcommand*{\theenumi}{\asbukx{enumi}}%
+	\renewcommand*{\@tablecontinuation}[1]{Продолжение таблицы~#1}%
+	\renewcommand*{\@chaptername}{ГЛАВА}%
+	\renewcommand*{\@introductionname}{ВВЕДЕНИЕ}%
+	\renewcommand*{\@conclusionname}{ЗАКЛЮЧЕНИЕ}%
+	\renewcommand*{\@appendixname}{ПРИЛОЖЕНИЕ}%
+	\renewcommand*{\@appendixcounter}{\Asbukx{chapter}}%
+	\renewcommand*{\@proofname}{Доказательство}%
+	\renewcommand*{\@referencesname}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}%
+	\renewcommand*{\@chapterconclusion}{Выводы по главе}%
+	\renewcommand*{\@listingname}{Листинг}%
+	\renewcommand*{\@theorem@theorem}{Теорема}%
+	\renewcommand*{\@theorem@proposition}{Утверждение}%
+	\renewcommand*{\@theorem@corollary}{Следствие}%
+	\renewcommand*{\@theorem@lemma}{Лемма}%
+	\renewcommand*{\@theorem@question}{Вопрос}%
+	\renewcommand*{\@theorem@conjecture}{Гипотеза}%
+	\renewcommand*{\@theorem@assumption}{Предположение}%
+	\renewcommand*{\@theorem@definition}{Определение}%
+	\renewcommand*{\@theorem@notation}{Обозначение}%
+	\renewcommand*{\@theorem@condition}{Условие}%
+	\renewcommand*{\@theorem@example}{Пример}%
 }
 
 %% Многостраничные таблицы в гостовском формате. Аргументы:
@@ -208,21 +208,21 @@
 %% 5 - число столбцов (не осилил вычислить его из значения 3)
 
 \newenvironment{nirtable}[5]{
-\begin{longtable}{#3}\caption{#2}\label{#1}
-\\\hline #4 \\\hline \endfirsthead
-\multicolumn{#5}{r}{\normalsize\@tablecontinuation{\thetable}} \\\hline #4 \endhead
-}{\end{longtable}}
+	\begin{longtable}{#3}\caption{#2}\label{#1}
+		\\\hline #4 \\\hline \endfirsthead
+		\multicolumn{#5}{r}{\normalsize\@tablecontinuation{\thetable}} \\\hline #4 \endhead
+		}{\end{longtable}}
 
 %% Библиография по ГОСТу. Используем только бибер.
 
 \RequirePackage[
-    backend=biber,
-    bibencoding=utf8,
-    sorting=nyt,
-    sortcites=true,
-    bibstyle=gost-numeric,
-    citestyle=numeric-comp,
-    autolang=other
+	backend=biber,
+	bibencoding=utf8,
+	sorting=nyt,
+	sortcites=true,
+	bibstyle=gost-numeric,
+	citestyle=numeric-comp,
+	autolang=other
 ]{biblatex}
 
 %% Патчи к стилевику библиографии.
@@ -246,64 +246,64 @@
 % Это ставит сначала русские, потом иностранные источники
 
 \DeclareSourcemap{
-    \maps[datatype=bibtex]{
-        \map{
-            \step[fieldsource=langid, match=russian, final]
-            \step[fieldset=presort, fieldvalue={a}]
-         }
-         \map{
-            \step[fieldsource=langid, notmatch=russian, final]
-            \step[fieldset=presort, fieldvalue={z}]
-         }
-    }
+	\maps[datatype=bibtex]{
+		\map{
+			\step[fieldsource=langid, match=russian, final]
+			\step[fieldset=presort, fieldvalue={a}]
+		}
+		\map{
+			\step[fieldsource=langid, notmatch=russian, final]
+			\step[fieldset=presort, fieldvalue={z}]
+		}
+	}
 }
 
 % Добавляем чей-то драйвер от online, чтобы "электронный ресурс" отражался по ГОСТу.
 
 \DeclareBibliographyDriver{online}{%
-\usebibmacro{bibindex}%
-\usebibmacro{begentry}%
-\usebibmacro{heading}%
-\newunit
-\usebibmacro{author/editor}%
-\setunit*{\labelnamepunct}%
-\usebibmacro{title}%
-\addspace\foreignlanguage{russian}{[Электронный ресурс]}
-\setunit{\addcolondelim}%
-\usebibmacro{translation}%
-\def\bbx@gost@respdelim{\setunit{\respdelim}}% ----- Resp starts -----
-\usebibmacro{byauthor}%
-\setunit*{\resppunct}%
-\iflistundef{organization}
-  {}
-  {\setrespdelim%
-   \printlist{organization}%
-   \setunit*{\resppunct}}%
-\usebibmacro{credits}%
-\setunit*{\resppunct}%
-\usebibmacro{byeditor}%
-\setunit*{\resppunct}%
-\usebibmacro{bytranslator+others}%
-\newunit\newblock
-\printfield{version}%
-\newunit\newblock
-\printlist[semicolondelim]{specdata}%
-\newunit\newblock
-\usebibmacro{date}%
-\newunit\newblock
-\printupdate%
-\newunit\newblock
-\printfield{systemreq}%
-\newunit\newblock
-\usebibmacro{doi+eprint+url+note}%
-\newunit\newblock
-\usebibmacro{addendum+pubstate}%
-\setunit{\bibpagerefpunct}\newblock
-\usebibmacro{pageref}%
-\newunit\newblock
-\usebibmacro{related:init}%
-\usebibmacro{related}%
-\usebibmacro{finentry}}
+	\usebibmacro{bibindex}%
+	\usebibmacro{begentry}%
+	\usebibmacro{heading}%
+	\newunit
+	\usebibmacro{author/editor}%
+	\setunit*{\labelnamepunct}%
+	\usebibmacro{title}%
+	\addspace\foreignlanguage{russian}{[Электронный ресурс]}
+	\setunit{\addcolondelim}%
+	\usebibmacro{translation}%
+	\def\bbx@gost@respdelim{\setunit{\respdelim}}% ----- Resp starts -----
+	\usebibmacro{byauthor}%
+	\setunit*{\resppunct}%
+	\iflistundef{organization}
+	{}
+	{\setrespdelim%
+		\printlist{organization}%
+		\setunit*{\resppunct}}%
+	\usebibmacro{credits}%
+	\setunit*{\resppunct}%
+	\usebibmacro{byeditor}%
+	\setunit*{\resppunct}%
+	\usebibmacro{bytranslator+others}%
+	\newunit\newblock
+	\printfield{version}%
+	\newunit\newblock
+	\printlist[semicolondelim]{specdata}%
+	\newunit\newblock
+	\usebibmacro{date}%
+	\newunit\newblock
+	\printupdate%
+	\newunit\newblock
+	\printfield{systemreq}%
+	\newunit\newblock
+	\usebibmacro{doi+eprint+url+note}%
+	\newunit\newblock
+	\usebibmacro{addendum+pubstate}%
+	\setunit{\bibpagerefpunct}\newblock
+	\usebibmacro{pageref}%
+	\newunit\newblock
+	\usebibmacro{related:init}%
+	\usebibmacro{related}%
+	\usebibmacro{finentry}}
 
 %% Счетчики. Для всего, кроме страниц, используем totcount, для страниц используем pageslts. Если надо.
 
@@ -344,15 +344,15 @@
 \definecolor{darkgreen}{rgb}{0,0.5,0}
 
 \lstset{
-    language=Java,
-    extendedchars=\true,
-    tabsize=4,
-    keywordstyle=\color{darkblue},
-    commentstyle=\color{gray},
-    stringstyle=\color{darkgreen},
-    breaklines=true,
-    showstringspaces=false,
-    basicstyle=\small
+	language=Java,
+	extendedchars=\true,
+	tabsize=4,
+	keywordstyle=\color{darkblue},
+	commentstyle=\color{gray},
+	stringstyle=\color{darkgreen},
+	breaklines=true,
+	showstringspaces=false,
+	basicstyle=\small
 }
 
 %% Все флоаты нумеруем глобально. Формулы - тоже.
@@ -366,12 +366,12 @@
 \counterwithout{equation}{chapter}
 
 \AtBeginDocument{%
-  \let\c@lstlisting\c@algorithm
-  \let\thelstlisting\thealgorithm
-  \let\ftype@lstlisting\ftype@algorithm % give the floats the same precedence
-  \counterwithout{lstlisting}{chapter}
-  \counterwithout{lstlisting}{section}
-  \counterwithout{lstlisting}{subsection}
+	\let\c@lstlisting\c@algorithm
+	\let\thelstlisting\thealgorithm
+	\let\ftype@lstlisting\ftype@algorithm % give the floats the same precedence
+	\counterwithout{lstlisting}{chapter}
+	\counterwithout{lstlisting}{section}
+	\counterwithout{lstlisting}{subsection}
 }
 
 
@@ -390,75 +390,75 @@
 
 \floatsetup[figure]{style=plain, capposition=bottom}
 \captionsetup[figure]{
-    labelsep=endash,
-    singlelinecheck=false,
-    labelfont={normalsize,md},
-    justification=centering,
-    position=bottom
+	labelsep=endash,
+	singlelinecheck=false,
+	labelfont={normalsize,md},
+	justification=centering,
+	position=bottom
 }
 \floatsetup[table]{style=plain, capposition=top}
 \captionsetup[table]{
-    labelsep=endash,
-    singlelinecheck=false,
-    labelfont={normalsize,md},
-    justification=justified,
-    position=top
+	labelsep=endash,
+	singlelinecheck=false,
+	labelfont={normalsize,md},
+	justification=justified,
+	position=top
 }
 \floatsetup[algorithm]{style=plain, capposition=top}
 \captionsetup[algorithm]{
-    labelsep=endash,
-    singlelinecheck=false,
-    labelfont={normalsize,md},
-    justification=justified,
-    position=top
+	labelsep=endash,
+	singlelinecheck=false,
+	labelfont={normalsize,md},
+	justification=justified,
+	position=top
 }
 \floatsetup[lstlisting]{style=plain, capposition=top}
 \captionsetup[lstlisting]{
-    labelsep=endash,
-    singlelinecheck=false,
-    labelfont={normalsize,md},
-    justification=justified,
-    position=top
+	labelsep=endash,
+	singlelinecheck=false,
+	labelfont={normalsize,md},
+	justification=justified,
+	position=top
 }
 
 %% Переопределение библиографии. Может, можно и проще, но сделал так.
 
 \defbibheading{trueHeading}{%
-\chapter*{\@referencesname}%
-\addcontentsline{toc}{chapter}{\@referencesname}}
+	\chapter*{\@referencesname}%
+	\addcontentsline{toc}{chapter}{\@referencesname}}
 
 \newcommand{\printmainbibliography}{
-\printbibliography[heading=trueHeading]%
-%%% Считаем, какие границы у пяти- и десятилетней давности
-\newcounter{@yearminusfive@src}%
-\newcounter{@yearminusten@src}%
-\setcounter{@yearminusfive@src}{\theyear}%
-\addtocounter{@yearminusfive@src}{-5}%
-\def\@yearminusfive{\value{@yearminusfive@src}}%
-\setcounter{@yearminusten@src}{\theyear}%
-\addtocounter{@yearminusten@src}{-10}%
-\def\@yearminusten{\value{@yearminusten@src}}%
-%%% Компоненты фильтров
-\newcommand{\@iffiveyears}{\iffieldint{year}{\ifnumless{\thefield{year}}{\@yearminusfive}{\skipentry}{}}{\skipentry}}%
-\newcommand{\@iftenyears}{\iffieldint{year}{\ifnumless{\thefield{year}}{\@yearminusfive}{\ifnumless{\thefield{year}}{\@yearminusten}{\skipentry}{}}{\skipentry}}{\skipentry}}%
-\newcommand{\@ifveryold}{\iffieldint{year}{\ifnumless{\thefield{year}}{\@yearminusten}{}{\skipentry}}{}}%
-\newcommand{\@ifrussian}{\iffieldundef{langid}{}{\iffieldequalstr{langid}{russian}{}{\skipentry}}}%
-\newcommand{\@ifforeign}{\iffieldundef{langid}{\skipentry}{\iffieldequalstr{langid}{russian}{\skipentry}{}}}%
-%%% Сами фильтры
-\defbibcheck{bibch@russiansourcesfiveyears}{\@iffiveyears\@ifrussian}%
-\defbibcheck{bibch@russiansourcestenyears}{\@iftenyears\@ifrussian}%
-\defbibcheck{bibch@russiansourcesveryold}{\@ifveryold\@ifrussian}%
-\defbibcheck{bibch@foreignsourcesfiveyears}{\@iffiveyears\@ifforeign}%
-\defbibcheck{bibch@foreignsourcestenyears}{\@iftenyears\@ifforeign}%
-\defbibcheck{bibch@foreignsourcesveryold}{\@ifveryold\@ifforeign}%
-\@countsourceswhere{}{citnum}%
-\@countsourceswhere{check=bibch@russiansourcesfiveyears}{c@russiansourcesfiveyears}%
-\@countsourceswhere{check=bibch@russiansourcestenyears}{c@russiansourcestenyears}%
-\@countsourceswhere{check=bibch@russiansourcesveryold}{c@russiansourcesveryold}%
-\@countsourceswhere{check=bibch@foreignsourcesfiveyears}{c@foreignsourcesfiveyears}%
-\@countsourceswhere{check=bibch@foreignsourcestenyears}{c@foreignsourcestenyears}%
-\@countsourceswhere{check=bibch@foreignsourcesveryold}{c@foreignsourcesveryold}%
-\@countsourceswhere{type=online}{c@internetsources}}
+	\printbibliography[heading=trueHeading]%
+	%%% Считаем, какие границы у пяти- и десятилетней давности
+	\newcounter{@yearminusfive@src}%
+	\newcounter{@yearminusten@src}%
+	\setcounter{@yearminusfive@src}{\theyear}%
+	\addtocounter{@yearminusfive@src}{-5}%
+	\def\@yearminusfive{\value{@yearminusfive@src}}%
+	\setcounter{@yearminusten@src}{\theyear}%
+	\addtocounter{@yearminusten@src}{-10}%
+	\def\@yearminusten{\value{@yearminusten@src}}%
+	%%% Компоненты фильтров
+	\newcommand{\@iffiveyears}{\iffieldint{year}{\ifnumless{\thefield{year}}{\@yearminusfive}{\skipentry}{}}{\skipentry}}%
+	\newcommand{\@iftenyears}{\iffieldint{year}{\ifnumless{\thefield{year}}{\@yearminusfive}{\ifnumless{\thefield{year}}{\@yearminusten}{\skipentry}{}}{\skipentry}}{\skipentry}}%
+	\newcommand{\@ifveryold}{\iffieldint{year}{\ifnumless{\thefield{year}}{\@yearminusten}{}{\skipentry}}{}}%
+	\newcommand{\@ifrussian}{\iffieldundef{langid}{}{\iffieldequalstr{langid}{russian}{}{\skipentry}}}%
+	\newcommand{\@ifforeign}{\iffieldundef{langid}{\skipentry}{\iffieldequalstr{langid}{russian}{\skipentry}{}}}%
+	%%% Сами фильтры
+	\defbibcheck{bibch@russiansourcesfiveyears}{\@iffiveyears\@ifrussian}%
+	\defbibcheck{bibch@russiansourcestenyears}{\@iftenyears\@ifrussian}%
+	\defbibcheck{bibch@russiansourcesveryold}{\@ifveryold\@ifrussian}%
+	\defbibcheck{bibch@foreignsourcesfiveyears}{\@iffiveyears\@ifforeign}%
+	\defbibcheck{bibch@foreignsourcestenyears}{\@iftenyears\@ifforeign}%
+	\defbibcheck{bibch@foreignsourcesveryold}{\@ifveryold\@ifforeign}%
+	\@countsourceswhere{}{citnum}%
+	\@countsourceswhere{check=bibch@russiansourcesfiveyears}{c@russiansourcesfiveyears}%
+	\@countsourceswhere{check=bibch@russiansourcestenyears}{c@russiansourcestenyears}%
+	\@countsourceswhere{check=bibch@russiansourcesveryold}{c@russiansourcesveryold}%
+	\@countsourceswhere{check=bibch@foreignsourcesfiveyears}{c@foreignsourcesfiveyears}%
+	\@countsourceswhere{check=bibch@foreignsourcestenyears}{c@foreignsourcestenyears}%
+	\@countsourceswhere{check=bibch@foreignsourcesveryold}{c@foreignsourcesveryold}%
+	\@countsourceswhere{type=online}{c@internetsources}}
 
 \newcommand{\@killhyperrefissue}{\renewbibmacro{pageref}{}\let\blx@anchor\relax}
 
@@ -477,9 +477,9 @@
 %%% Сначала учимся считать источники вместо того, чтобы их печатать
 \newcounter{@bibliocounter}
 \defbibenvironment{@fillbibliocounter}
-    {\renewcommand{\blx@driver}[1]{}}
-    {}
-    {\stepcounter{@bibliocounter}}
+{\renewcommand{\blx@driver}[1]{}}
+{}
+{\stepcounter{@bibliocounter}}
 
 %%% Заводим счетчики под это все
 \newtotcounter[auxfile=\jobname.tct]{c@relatedworksourcecount}
@@ -495,9 +495,9 @@
 
 %%% Считаем в счетчик #2 число ссылок, удовлетворяющих фильтру #1
 \newcommand{\@countsourceswhere}[2]{%
-\setcounter{@bibliocounter}{0}%
-\begingroup\@killhyperrefissue\printbibliography[env=@fillbibliocounter,heading=reallynone,#1]\endgroup%
-\setcounter{#2}{\arabic{@bibliocounter}}}
+	\setcounter{@bibliocounter}{0}%
+	\begingroup\@killhyperrefissue\printbibliography[env=@fillbibliocounter,heading=reallynone,#1]\endgroup%
+	\setcounter{#2}{\arabic{@bibliocounter}}}
 
 %%% Определяем команды через значения счетчиков
 \newcommand{\relatedworksourcecount}{\total{c@relatedworksourcecount}}
@@ -508,7 +508,7 @@
 \newcommand{\foreignsourcestenyears}{\total{c@foreignsourcestenyears}}
 \newcommand{\foreignsourcesveryold}{\total{c@foreignsourcesveryold}}
 \newcommand{\internetsources}{\@iflfe{\ifthenelse{\equal{\totvalue{c@internetsources}}{0}}{none}{yes, \total{c@internetsources} resource(s)}}
-                                     {\ifthenelse{\equal{\totvalue{c@internetsources}}{0}}{нет}{да, число ресурсов: \total{c@internetsources}}}}
+	{\ifthenelse{\equal{\totvalue{c@internetsources}}{0}}{нет}{да, число ресурсов: \total{c@internetsources}}}}
 
 %%% Команды для начала и конца секции с обзором
 \newcommand{\startrelatedwork}{\newrefsegment}
@@ -554,13 +554,13 @@
 %%
 \renewcommand{\thechapter}{\@appendixcounter}
 \titleformat{\chapter}[block]{\normalsize\bfseries\center\stepcounter{appendix}}%
-    {\@appendixname~\thechapter.~}{0pt}{\begin{MakeUppercase}}[\end{MakeUppercase}\thispagestyle{\TheOnlyTruePageStyle}]
-\titlecontents{chapter}
-    [\appendixPrefix]
-    {}
-    {\contentslabel[\@appendixname~\thecontentslabel.]{\the\appendixPrefix}}
-    {\hspace*{-\the\appendixPrefix}}
-    {\titlerule*[0.5pc]{.}\contentspage}
+{\@appendixname~\thechapter.~}{0pt}{\begin{MakeUppercase}}[\end{MakeUppercase}\thispagestyle{\TheOnlyTruePageStyle}]
+	\titlecontents{chapter}
+	[\appendixPrefix]
+	{}
+	{\contentslabel[\@appendixname~\thecontentslabel.]{\the\appendixPrefix}}
+	{\hspace*{-\the\appendixPrefix}}
+	{\titlerule*[0.5pc]{.}\contentspage}
 }
 
 %% Приемлемый внешний вид содержания
@@ -573,9 +573,9 @@
 \newcommand{\banhyphens}{\hyphenpenalty=10000\exhyphenpenalty=10000{}}
 
 \AtBeginDocument{
-    %% Длина "приложения" нормально определяется только теперь
-    \newlength{\appendixPrefix}
-    \settowidth{\appendixPrefix}{\@appendixname~M.~}
+	%% Длина "приложения" нормально определяется только теперь
+	\newlength{\appendixPrefix}
+	\settowidth{\appendixPrefix}{\@appendixname~M.~}
 }
 
 \newlength{\chapterPrefix}
@@ -590,23 +590,23 @@
 \addtolength{\subsectionPrefix}{\subsectionW}
 
 \titlecontents{chapter}
-    [\chapterPrefix]
-    {}
-    {\contentslabel[\thecontentslabel.]{\chapterW}}
-    {\hspace*{-\chapterW}}
-    {\titlerule*[0.5pc]{.}\contentspage}
+[\chapterPrefix]
+{}
+{\contentslabel[\thecontentslabel.]{\chapterW}}
+{\hspace*{-\chapterW}}
+{\titlerule*[0.5pc]{.}\contentspage}
 \titlecontents{section}
-    [\sectionPrefix]
-    {}
-    {\contentslabel[\thecontentslabel.]{\sectionW}}
-    {\hspace*{-\sectionW}}
-    {\titlerule*[0.5pc]{.}\contentspage}
+[\sectionPrefix]
+{}
+{\contentslabel[\thecontentslabel.]{\sectionW}}
+{\hspace*{-\sectionW}}
+{\titlerule*[0.5pc]{.}\contentspage}
 \titlecontents{subsection}
-    [\subsectionPrefix]
-    {}
-    {\contentslabel[\thecontentslabel.]{\subsectionW}~}
-    {\hspace*{-\subsectionW}}
-    {\titlerule*[0.5pc]{.}\contentspage}
+[\subsectionPrefix]
+{}
+{\contentslabel[\thecontentslabel.]{\subsectionW}~}
+{\hspace*{-\subsectionW}}
+{\titlerule*[0.5pc]{.}\contentspage}
 
 %% Выводы по главе - удобная команда
 
@@ -621,11 +621,11 @@
 %% ...отдельным пунктом - введение и заключение
 
 \newcommand{\startprefacepage}{%
-\chapter*{\@introductionname}\label{chapter:introduction}%
-\addcontentsline{toc}{chapter}{\@introductionname}}
+	\chapter*{\@introductionname}\label{chapter:introduction}%
+	\addcontentsline{toc}{chapter}{\@introductionname}}
 \newcommand{\startconclusionpage}{%
-\chapter*{\@conclusionname}\label{chapter:conclusion}%
-\addcontentsline{toc}{chapter}{\@conclusionname}}
+	\chapter*{\@conclusionname}\label{chapter:conclusion}%
+	\addcontentsline{toc}{chapter}{\@conclusionname}}
 
 %% Титульная страница
 
@@ -644,11 +644,11 @@
 %%% \university
 
 \newcommand{\theuniversity@ru}{{\small\bfseries Министерство науки и высшего образования Российской Федерации\par
-{\scriptsize \MakeUppercase{федеральное государственное автономное образовательное учреждение высшего образования}}\par
-\begin{singlespace}\MakeUppercase{<<Национальный исследовательский университет ИТМО>>}\end{singlespace}}}
+			{\scriptsize \MakeUppercase{федеральное государственное автономное образовательное учреждение высшего образования}}\par
+			\begin{singlespace}\MakeUppercase{<<Национальный исследовательский университет ИТМО>>}\end{singlespace}}}
 
 \newcommand{\theuniversity@en}{{\small\bfseries Ministry of Science and Higher Education of the Russian Federation\par
-\MakeUppercase{ITMO University}}}
+			\MakeUppercase{ITMO University}}}
 
 \newcommand{\theuniversity}{\@iflfe{\theuniversity@en}{\theuniversity@ru}}
 \newcommand{\university}[1]{\@iflfe{\renewcommand{\theuniversity@en}{#1}}{\renewcommand{\theuniversity@ru}{#1}}}
@@ -688,7 +688,7 @@
 \newcommand{\theprogramheaddegree}{\@iflfe{\theprogramheaddegree@en}{\theprogramheaddegree@ru}}
 
 \newcommand{\programhead}[2]{\@iflfe{\renewcommand{\theprogramhead@en}{#1}\renewcommand{\theprogramheaddegree@en}{#2}}
-                                    {\renewcommand{\theprogramhead@ru}{#1}\renewcommand{\theprogramheaddegree@ru}{#2}}}
+	{\renewcommand{\theprogramhead@ru}{#1}\renewcommand{\theprogramheaddegree@ru}{#2}}}
 
 %%% \city
 
@@ -732,7 +732,7 @@
 \newcommand{\theauthorshort}{\@iflfe{\theauthorshort@en}{\theauthorshort@ru}}
 
 \renewcommand{\author}[2]{\@iflfe{\newcommand{\theauthor@en}{#1}\newcommand{\theauthorshort@en}{#2}}
-                                 {\newcommand{\theauthor@ru}{#1}\newcommand{\theauthorshort@ru}{#2}}}
+	{\newcommand{\theauthor@ru}{#1}\newcommand{\theauthorshort@ru}{#2}}}
 
 %%% \supervisor
 
@@ -742,7 +742,7 @@
 \newcommand{\thesupervisorwork}{\@iflfe{\thesupervisorwork@en}{\thesupervisorwork@ru}}
 
 \newcommand{\supervisor}[4]{\@iflfe{\newcommand{\thesupervisor@en}{#1}\newcommand{\thesupervisorshort@en}{#2}\newcommand{\thesupervisordegree@en}{#3}\newcommand{\thesupervisorwork@en}{#4}}
-                                   {\newcommand{\thesupervisor@ru}{#1}\newcommand{\thesupervisorshort@ru}{#2}\newcommand{\thesupervisordegree@ru}{#3}\newcommand{\thesupervisorwork@ru}{#4}}}
+	{\newcommand{\thesupervisor@ru}{#1}\newcommand{\thesupervisorshort@ru}{#2}\newcommand{\thesupervisordegree@ru}{#3}\newcommand{\thesupervisorwork@ru}{#4}}}
 
 %%% \secretary
 
@@ -801,9 +801,9 @@
 \newcommand{\thelistofconsultants@en}{}
 \newcommand{\thelistofconsultants@ru}{}
 \newcommand{\addconsultant}[2]{\@iflfe{\booltrue{hasconsultants@en}\appto{\thelistofconsultants@en}{\item #1, #2 \hfill\signatureplace\par\bigskip}}
-                                      {\booltrue{hasconsultants@ru}\appto{\thelistofconsultants@ru}{\item #1, #2 \hfill\signatureplace\par\bigskip}}}
+	{\booltrue{hasconsultants@ru}\appto{\thelistofconsultants@ru}{\item #1, #2 \hfill\signatureplace\par\bigskip}}}
 \newcommand{\displayconsultants}{\@iflfe{\ifbool{hasconsultants@en}{\noindent Consultant(s): \begin{enumerate}\thelistofconsultants@en\end{enumerate}\par}{}}
-                                        {\ifbool{hasconsultants@ru}{\noindent Консультанты:  \begin{enumerate}\thelistofconsultants@ru\end{enumerate}\par}{}}}
+	{\ifbool{hasconsultants@ru}{\noindent Консультанты:  \begin{enumerate}\thelistofconsultants@ru\end{enumerate}\par}{}}}
 
 %%% Добавить пакет программ: (Название) (Ссылки на разделы)
 \newbool{hasadvancedsoftware@en}
@@ -811,37 +811,37 @@
 \newcommand{\thelistofadvancedsoftware@en}{}
 \newcommand{\thelistofadvancedsoftware@ru}{}
 \newcommand{\addadvancedsoftware}[2]{\@iflfe{\booltrue{hasadvancedsoftware@en}\appto{\thelistofadvancedsoftware@en}{#1 & #2 \\\hline}}
-                                            {\booltrue{hasadvancedsoftware@ru}\appto{\thelistofadvancedsoftware@ru}{#1 & #2 \\\hline}}}
+	{\booltrue{hasadvancedsoftware@ru}\appto{\thelistofadvancedsoftware@ru}{#1 & #2 \\\hline}}}
 
 \newcommand{\displayadvancedsoftware@ru}{\ifbool{hasadvancedsoftware@ru}
-{\par\vspace{3pt}\noindent\begin{tabularx}{\textwidth}{|X|p{0.25\textwidth}|}\hline
- \multicolumn{1}{|c|}{\textbf{Пакеты компьютерных программ и технологий}} & \multicolumn{1}{c|}{\textbf{Раздел работы}} \\\hline
- \thelistofadvancedsoftware@ru
-\end{tabularx}\par\vspace{6pt}}{нет\par}}
+	{\par\vspace{3pt}\noindent\begin{tabularx}{\textwidth}{|X|p{0.25\textwidth}|}\hline
+			\multicolumn{1}{|c|}{\textbf{Пакеты компьютерных программ и технологий}} & \multicolumn{1}{c|}{\textbf{Раздел работы}} \\\hline
+			\thelistofadvancedsoftware@ru
+		\end{tabularx}\par\vspace{6pt}}{нет\par}}
 
 \newcommand{\displayadvancedsoftware@en}{\ifbool{hasadvancedsoftware@en}
-{\par\vspace{3pt}\noindent\begin{tabularx}{\textwidth}{|X|p{0.25\textwidth}|}\hline
- \multicolumn{1}{|c|}{\textbf{Software suites and technologies}} & \multicolumn{1}{c|}{\textbf{Thesis section}} \\\hline
- \thelistofadvancedsoftware@en
-\end{tabularx}\par\vspace{6pt}}{none\par}}
+	{\par\vspace{3pt}\noindent\begin{tabularx}{\textwidth}{|X|p{0.25\textwidth}|}\hline
+			\multicolumn{1}{|c|}{\textbf{Software suites and technologies}} & \multicolumn{1}{c|}{\textbf{Thesis section}} \\\hline
+			\thelistofadvancedsoftware@en
+		\end{tabularx}\par\vspace{6pt}}{none\par}}
 
 \newcommand{\displayadvancedsoftware}{\@iflfe{\displayadvancedsoftware@en}{\displayadvancedsoftware@ru}}
 
 \newcommand{\displaysourcepartition@ru}{\begin{tabularx}{\textwidth}{|*{6}{>{\centering\arraybackslash}X|}}\hline
-  \multicolumn{3}{|c|}{\textbf{Отечественных}} & \multicolumn{3}{c|}{\textbf{Иностранных}} \\\hline
-  Последние & От 5      & Более  & Последние & От 5 & Более \\
-  5 лет     & до 10 лет & 10 лет & 5 лет     & до 10 лет & 10 лет \\\hline
-  \russiansourcesfiveyears & \russiansourcestenyears & \russiansourcesveryold &
-  \foreignsourcesfiveyears & \foreignsourcestenyears & \foreignsourcesveryold \\\hline
-\end{tabularx}}
+		\multicolumn{3}{|c|}{\textbf{Отечественных}} & \multicolumn{3}{c|}{\textbf{Иностранных}}                                                           \\\hline
+		Последние                                    & От 5                                      & Более                  & Последние & От 5      & Более  \\
+		5 лет                                        & до 10 лет                                 & 10 лет                 & 5 лет     & до 10 лет & 10 лет \\\hline
+		\russiansourcesfiveyears                     & \russiansourcestenyears                   & \russiansourcesveryold &
+		\foreignsourcesfiveyears                     & \foreignsourcestenyears                   & \foreignsourcesveryold                                  \\\hline
+	\end{tabularx}}
 
 \newcommand{\displaysourcepartition@en}{\begin{tabularx}{\textwidth}{|*{6}{>{\centering\arraybackslash}X|}}\hline
-  \multicolumn{3}{|c|}{\textbf{Russian}} & \multicolumn{3}{c|}{\textbf{Foreign}} \\\hline
-  In the last & 5 to 10 & More than  & In the last & 5 to 10 & More than \\
-  5 years     & years   & 10 years   & 5 years     & years   & 10 years  \\\hline
-  \russiansourcesfiveyears & \russiansourcestenyears & \russiansourcesveryold &
-  \foreignsourcesfiveyears & \foreignsourcestenyears & \foreignsourcesveryold \\\hline
-\end{tabularx}}
+		\multicolumn{3}{|c|}{\textbf{Russian}} & \multicolumn{3}{c|}{\textbf{Foreign}}                                                              \\\hline
+		In the last                            & 5 to 10                               & More than              & In the last & 5 to 10 & More than \\
+		5 years                                & years                                 & 10 years               & 5 years     & years   & 10 years  \\\hline
+		\russiansourcesfiveyears               & \russiansourcestenyears               & \russiansourcesveryold &
+		\foreignsourcesfiveyears               & \foreignsourcestenyears               & \foreignsourcesveryold                                     \\\hline
+	\end{tabularx}}
 
 \newcommand{\displaysourcepartition}{\@iflfe{\displaysourcepartition@en}{\displaysourcepartition@ru}}
 
@@ -1043,177 +1043,164 @@
 
 %%% Локализуемый шаблон титульной страницы
 \newcommand{\typeoutTitlePage}{\begin{titlepage}
-    \banhyphens
-    \begin{center}\theuniversity\end{center}
-    \vspace{0cm plus 0.66fill minus 0cm}
-    {\centering\bfseries\MakeUppercase{\@strings@ThesisName}\par}
-    \vspace{0cm plus 0.66fill minus 0cm}
-    {\centering\MakeUppercase{\thetitle}\par}
-    \vspace{0cm plus 1fill minus 0cm}
-    {\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.5}
-    \noindent\begin{tabularx}{\textwidth}{Xl}
-    & \@strings@Author: \theauthor \hfilll \signatureplace \\
-    & \@strings@SubjectArea:\;
-       \begin{minipage}[t]{0.4\textwidth}\begin{flushleft}\thespecialty\end{flushleft}\end{minipage} \\
-    & \@strings@DegreeLevel: \@strings@DegreeName \\
-    & \@strings@ThesisSupervisorLong: \thesupervisorshort, \thesupervisordegree~ \hfilll \signatureplace \\
-    \end{tabularx}\par}
-    \vspace{0cm plus 1fill minus 0cm}
-    \begin{center}\thecity\par\theyear\@strings@yearend\end{center}
-\end{titlepage}\begin{titlepage}
-    \banhyphens
-    \noindent\@strings@Student~\theauthor\;\par
-    \noindent\@strings@Group~\thestudygroup\; \@strings@FacultyOf~\thefaculty\par\bigskip\par
-    \noindent\@strings@SubjectAreaProgramMajor\par
-    \noindent\thespecialization \par\bigskip\par
-    \displayconsultants\bigskip\par\bigskip\par
-    \noindent\@strings@ThesisReceived~\unknowndate\par\bigskip\par
-    \noindent\@strings@OriginalityOfThesis~\uhspace{5ex}\%\par\bigskip\par
-    \noindent\@strings@ThesisCompletedWithGrade~\infiniteuhspace\par\bigskip\par
-    \noindent\@strings@DateOfDefense~\thedefencedate\par\bigskip\par
-    \noindent\@strings@SecretaryOfCommission~\thesecretary\hfill\signatureplace\par\bigskip\par
-    \noindent\@strings@NumberOfPages~\infiniteuhspace\par\bigskip\par
-    \noindent\@strings@NumberOfSupplementary~\infiniteuhspace\par\bigskip\par
-\end{titlepage}}
+		\banhyphens
+		\begin{center}\theuniversity\end{center}
+		\vspace{0cm plus 0.66fill minus 0cm}
+		{\centering\bfseries\MakeUppercase{\@strings@ThesisName}\par}
+		\vspace{0cm plus 0.66fill minus 0cm}
+		{\centering\MakeUppercase{\thetitle}\par}
+		\vspace{0cm plus 1fill minus 0cm}
+		{\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.5}
+			\noindent\begin{tabularx}{\textwidth}{Xl}
+				 & \@strings@Author: \theauthor \hfilll \signatureplace                                               \\
+				 & \@strings@SubjectArea:\;
+				\begin{minipage}[t]{0.4\textwidth}\begin{flushleft}\thespecialty\end{flushleft}\end{minipage}                            \\
+				 & \@strings@DegreeLevel: \@strings@DegreeName                                                        \\
+				 & \@strings@ThesisSupervisorLong: \thesupervisorshort, \thesupervisordegree~ \hfilll \signatureplace \\
+			\end{tabularx}\par}
+		\vspace{0cm plus 1fill minus 0cm}
+		\begin{center}\thecity\par\theyear\@strings@yearend\end{center}
+	\end{titlepage}}
 
 %%% Локализуемый шаблон задания
 \newcommand{\typeoutSpecification}{\begin{titlepage}
-\begin{center}\theuniversity\end{center}
-\begin{small}
-    \noindent\begin{tabularx}{\textwidth}{Xl}
-        & \hfilll \textbf{\@strings@APPROVED} \hfilll\ \\
-        & \@strings@HeadOfProgram\\
-        & \theprogramheaddegree\ \theprogramhead\ \signatureplace \\
-        & \unknowndate \\
-    \end{tabularx}
-    \bigskip
-    \begin{center}\bfseries{\normalsize\@strings@OBJECTIVES@first}\\\@strings@OBJECTIVES@second\end{center}
-    \bigskip
-    \begingroup\banhyphens
-    \noindent \textbf{\@strings@Student}~\theauthor\;\par
-    \noindent \textbf{\@strings@Group}~\thestudygroup\; \textbf{\@strings@FacultyOf}~\thefaculty\;\par
-    \noindent \textbf{\@strings@DegreeLevel:} \@strings@DegreeName\par
-    \noindent \textbf{\@strings@SubjectArea:} \thespecialty\par
-    \noindent \textbf{\@strings@ProgramMajor:} \thespecialization\par
-    \noindent \textbf{\@strings@ThesisTitle:} \thetitle\par
-    \noindent \textbf{\@strings@ThesisSupervisor}~\thesupervisorshort, \thesupervisordegree, \thesupervisorwork\par
-    \endgroup
-    \noindent \textbf{2~\@strings@DeadlineForSubmission:}     \thefinishdate     \par
-    \noindent \textbf{3~\@strings@RequirementsAndPremise}\par \thetechnicalspec  \par\pagebreak[3]
-    \noindent \textbf{4~\@strings@ContentOfTheThesis}    \par \theplannedcontents\par\pagebreak[3]
-    \noindent \textbf{5~\@strings@ListOfGraphic}         \par \theplannedgraphics\par\pagebreak[3]
-    \noindent \textbf{6~\@strings@SourceMaterials}       \par \theplannedsources \par\pagebreak[3]
-    \noindent \textbf{7~\@strings@ObjectivesIssuedOn}         \thestartdate      \par\bigskip\par
-    \noindent\begingroup\renewcommand{\arraystretch}{1.5}\begin{tabular}{ll}
-        \@strings@ThesisSupervisorLong & \signatureplace \\
-        \@strings@ObjectivesAssumed    & \signatureplace ~ \thestartdate
-    \end{tabular}\endgroup
-\end{small}
-\end{titlepage}}
+		\begin{center}\theuniversity\end{center}
+		\begin{small}
+			\noindent\begin{tabularx}{\textwidth}{Xl}
+				 & \hfilll \textbf{\@strings@APPROVED} \hfilll\            \\
+				 & \@strings@HeadOfProgram                                 \\
+				 & \theprogramheaddegree\ \theprogramhead\ \signatureplace \\
+				 & \unknowndate                                            \\
+			\end{tabularx}
+			\bigskip
+			\begin{center}\bfseries{\normalsize\@strings@OBJECTIVES@first}\\\@strings@OBJECTIVES@second\end{center}
+			\bigskip
+			\begingroup\banhyphens
+			\noindent \textbf{\@strings@Student}~\theauthor\;\par
+			\noindent \textbf{\@strings@Group}~\thestudygroup\; \textbf{\@strings@FacultyOf}~\thefaculty\;\par
+			\noindent \textbf{\@strings@DegreeLevel:} \@strings@DegreeName\par
+			\noindent \textbf{\@strings@SubjectArea:} \thespecialty\par
+			\noindent \textbf{\@strings@ProgramMajor:} \thespecialization\par
+			\noindent \textbf{\@strings@ThesisTitle:} \thetitle\par
+			\noindent \textbf{\@strings@ThesisSupervisor}~\thesupervisorshort, \thesupervisordegree, \thesupervisorwork\par
+			\endgroup
+			\noindent \textbf{2~\@strings@DeadlineForSubmission:}     \thefinishdate     \par
+			\noindent \textbf{3~\@strings@RequirementsAndPremise}\par \thetechnicalspec  \par\pagebreak[3]
+			\noindent \textbf{4~\@strings@ContentOfTheThesis}    \par \theplannedcontents\par\pagebreak[3]
+			\noindent \textbf{5~\@strings@ListOfGraphic}         \par \theplannedgraphics\par\pagebreak[3]
+			\noindent \textbf{6~\@strings@SourceMaterials}       \par \theplannedsources \par\pagebreak[3]
+			\noindent \textbf{7~\@strings@ObjectivesIssuedOn}         \thestartdate      \par\bigskip\par
+			\noindent\begingroup\renewcommand{\arraystretch}{1.5}\begin{tabular}{ll}
+				\@strings@ThesisSupervisorLong & \signatureplace                 \\
+				\@strings@ObjectivesAssumed    & \signatureplace ~ \thestartdate
+			\end{tabular}\endgroup
+		\end{small}
+	\end{titlepage}}
 
 %%% Локализуемый шаблон аннотации
 \newcommand{\typeoutAnnotation}{\begin{titlepage}
-    \begin{center}\theuniversity\end{center}
-    {\centering\bfseries\@strings@ANNOTATION@first\par}
-    \begin{small}
-    {\centering\bfseries\@strings@ANNOTATION@second\par}
-    \bigskip
-    \noindent\textbf{\@strings@Student:} \theauthor\par
-    \noindent\textbf{\@strings@ThesisTitleLong:} \thetitle\par
-    \noindent\textbf{\@strings@NameOfOrganization:} \thedegreehost\par
-    \bigskip
-    {\centering\bfseries\@strings@DescriptionOfThesis\par}
-    \bigskip
-    \noindent1~\@strings@ResearchObjective: \theresearchaim\par\pagebreak[3]
-    \noindent2~\@strings@ResearchTasks: \theresearchtargets\par\pagebreak[3]
-    \noindent3~\@strings@SourcesReview: \relatedworksourcecount\par
-    \noindent4~\@strings@SourcesTotal: \total{citnum}\par
-    \noindent5~\@strings@SourcesByYear: \par\vspace{3pt}
-    \noindent\displaysourcepartition\par\vspace{6pt}
-    \noindent6~\@strings@OnlineResources: \internetsources\par\pagebreak[3]
-    \noindent7~\@strings@UseOfSoftware: \displayadvancedsoftware\pagebreak[3]
-    \noindent8~\@strings@ShortSummary\par\theresearchsummary\par\pagebreak[3]\vspace{1ex minus 1ex}
-    \noindent9~\@strings@GrantsReceived\par\theresearchfunding\par\pagebreak[3]\vspace{1ex minus 1ex}
-    \noindent10~\@strings@ThesisPublications\par\theresearchpublications\par\bigskip
-    \noindent\begingroup\renewcommand{\arraystretch}{1.5}\begin{tabular}{lll}
-        \@strings@Student & \theauthorshort & \signatureplace \\
-        \@strings@ThesisSupervisorLong & \thesupervisorshort &  \signatureplace \\
-        \multicolumn{3}{l}{\unknowndate}
-    \end{tabular}\endgroup
-    \end{small}
-\end{titlepage}}
+		\begin{center}\theuniversity\end{center}
+		{\centering\bfseries\@strings@ANNOTATION@first\par}
+		\begin{small}
+			{\centering\bfseries\@strings@ANNOTATION@second\par}
+			\bigskip
+			\noindent\textbf{\@strings@Student:} \theauthor\par
+			\noindent\textbf{\@strings@ThesisTitleLong:} \thetitle\par
+			\noindent\textbf{\@strings@NameOfOrganization:} \thedegreehost\par
+			\bigskip
+			{\centering\bfseries\@strings@DescriptionOfThesis\par}
+			\bigskip
+			\noindent1~\@strings@ResearchObjective: \theresearchaim\par\pagebreak[3]
+			\noindent2~\@strings@ResearchTasks: \theresearchtargets\par\pagebreak[3]
+			\noindent3~\@strings@SourcesReview: \relatedworksourcecount\par
+			\noindent4~\@strings@SourcesTotal: \total{citnum}\par
+			\noindent5~\@strings@SourcesByYear: \par\vspace{3pt}
+			\noindent\displaysourcepartition\par\vspace{6pt}
+			\noindent6~\@strings@OnlineResources: \internetsources\par\pagebreak[3]
+			\noindent7~\@strings@UseOfSoftware: \displayadvancedsoftware\pagebreak[3]
+			\noindent8~\@strings@ShortSummary\par\theresearchsummary\par\pagebreak[3]\vspace{1ex minus 1ex}
+			\noindent9~\@strings@GrantsReceived\par\theresearchfunding\par\pagebreak[3]\vspace{1ex minus 1ex}
+			\noindent10~\@strings@ThesisPublications\par\theresearchpublications\par\bigskip
+			\noindent\begingroup\renewcommand{\arraystretch}{1.5}\begin{tabular}{lll}
+				\@strings@Student              & \theauthorshort     & \signatureplace \\
+				\@strings@ThesisSupervisorLong & \thesupervisorshort & \signatureplace \\
+				\multicolumn{3}{l}{\unknowndate}
+			\end{tabular}\endgroup
+		\end{small}
+	\end{titlepage}}
 
 %%% Параметр: Бакалавр/Магистр
 \renewcommand{\maketitle}[1]{
-    \ifstrequal{#1}{Магистр}{
-        \providecommand{\thespecialization@ru}{Технологии разработки программного обеспечения}
-        \providecommand{\thespecialty@ru}{01.04.02~Прикладная математика и информатика}
-        \providecommand{\thespecialization@en}{Technologies of software engineering}
-        \providecommand{\thespecialty@en}{01.04.02~Applied mathematics and informatics}
-        \providecommand{\@strings@DegreeName@ru}{Магистр}
-        \providecommand{\@strings@DegreeName@en}{Master}
-    }{
-        \ifstrequal{#1}{Бакалавр}{
-            \providecommand{\thespecialization@ru}{Информатика и программирование}
-            \providecommand{\thespecialty@ru}{01.03.02~Прикладная математика и информатика}
-            \providecommand{\thespecialization@en}{Computer science and programming}
-            \providecommand{\thespecialty@en}{01.03.02~Applied mathematics and informatics}
-            \providecommand{\@strings@DegreeName@ru}{Бакалавр}
-            \providecommand{\@strings@DegreeName@en}{Bachelor}
-        }{
-            \ClassError{Unknown maketitle argument: #1, expected Магистр or Бакалавр}
-        }
-    }
+	\ifstrequal{#1}{Магистр}{
+		\providecommand{\thespecialization@ru}{Технологии разработки программного обеспечения}
+		\providecommand{\thespecialty@ru}{01.04.02~Прикладная математика и информатика}
+		\providecommand{\thespecialization@en}{Technologies of software engineering}
+		\providecommand{\thespecialty@en}{01.04.02~Applied mathematics and informatics}
+		\providecommand{\@strings@DegreeName@ru}{Магистр}
+		\providecommand{\@strings@DegreeName@en}{Master}
+	}{
+		\ifstrequal{#1}{Бакалавр}{
+			\providecommand{\thespecialization@ru}{Информатика и программирование}
+			\providecommand{\thespecialty@ru}{01.03.02~Прикладная математика и информатика}
+			\providecommand{\thespecialization@en}{Computer science and programming}
+			\providecommand{\thespecialty@en}{01.03.02~Applied mathematics and informatics}
+			\providecommand{\@strings@DegreeName@ru}{Бакалавр}
+			\providecommand{\@strings@DegreeName@en}{Bachelor}
+		}{
+			\ClassError{Unknown maketitle argument: #1, expected Магистр or Бакалавр}
+		}
+	}
 
 	\pagenumbering{gobble}
 	\typeoutTitlePage
-    \if@shouldmaketitlepage@ru\begin{otherlanguage}{russian}\typeoutTitlePage\end{otherlanguage}\fi
-    \if@shouldmakespecification\typeoutSpecification\fi
-    \if@shouldmakespecification@ru\begin{otherlanguage}{russian}\typeoutSpecification\end{otherlanguage}\fi
-    \if@shouldmakeannotation\typeoutAnnotation\fi
-    \if@shouldmakeannotation@ru\begin{otherlanguage}{russian}\typeoutAnnotation\end{otherlanguage}\fi
-    \pagenumbering{arabic}
+	\if@shouldmaketitlepage@ru\begin{otherlanguage}{russian}\typeoutTitlePage\end{otherlanguage}\fi
+	\if@shouldmakespecification\typeoutSpecification\fi
+	\if@shouldmakespecification@ru\begin{otherlanguage}{russian}\typeoutSpecification\end{otherlanguage}\fi
+	\if@shouldmakeannotation\typeoutAnnotation\fi
+	\if@shouldmakeannotation@ru\begin{otherlanguage}{russian}\typeoutAnnotation\end{otherlanguage}\fi
+	\pagenumbering{arabic}
 
-    %% Ставим номер страницы снизу по центру
-    \newcommand{\TheOnlyTruePageStyle}{fancy}
-    \pagestyle{\TheOnlyTruePageStyle}
-    \renewcommand{\headrulewidth}{0pt}
-    \renewcommand{\footrulewidth}{0pt}
-    \rhead{}
-    \lfoot{}
-    \cfoot{\thepage}
-    \rfoot{}
-    \setlength{\footskip}{0pt}
-    \fancyfootoffset{0pt}
+	%% Ставим номер страницы снизу по центру
+	\newcommand{\TheOnlyTruePageStyle}{fancy}
+	\pagestyle{\TheOnlyTruePageStyle}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+	\rhead{}
+	\lhead{}
+	\lfoot{}
+	\cfoot{\thepage}
+	\rfoot{}
+	\setlength{\footskip}{0pt}
+	\fancyfootoffset{0pt}
 
-    \setcounter{page}{4}
-    % Выключаем переносы в оглавлении
-    \pretocmd{\tableofcontents}{\begingroup\banhyphens}{}{}
-    \apptocmd{\tableofcontents}{\endgroup}{}{}
+	\setcounter{page}{4}
+	% Выключаем переносы в оглавлении
+	\pretocmd{\tableofcontents}{\begingroup\banhyphens}{}{}
+	\apptocmd{\tableofcontents}{\endgroup}{}{}
 }
 
 %% Веселый способ работать с метапостом
 
 \RequirePackage{ifpdf}
 \ifpdf
-\DeclareGraphicsRule{.1}{mps}{*}{}
-\DeclareGraphicsRule{.2}{mps}{*}{}
-\DeclareGraphicsRule{.3}{mps}{*}{}
-\DeclareGraphicsRule{.4}{mps}{*}{}
-\DeclareGraphicsRule{.5}{mps}{*}{}
-\DeclareGraphicsRule{.6}{mps}{*}{}
-\DeclareGraphicsRule{.7}{mps}{*}{}
-\DeclareGraphicsRule{.8}{mps}{*}{}
-\DeclareGraphicsRule{.9}{mps}{*}{}
-\DeclareGraphicsRule{.10}{mps}{*}{}
-\DeclareGraphicsRule{.11}{mps}{*}{}
-\DeclareGraphicsRule{.12}{mps}{*}{}
-\DeclareGraphicsRule{.13}{mps}{*}{}
-\DeclareGraphicsRule{.14}{mps}{*}{}
-\DeclareGraphicsRule{.15}{mps}{*}{}
-\DeclareGraphicsRule{.16}{mps}{*}{}
-\DeclareGraphicsRule{.17}{mps}{*}{}
-\DeclareGraphicsRule{.18}{mps}{*}{}
-\DeclareGraphicsRule{.19}{mps}{*}{}
-\DeclareGraphicsRule{.20}{mps}{*}{}
+	\DeclareGraphicsRule{.1}{mps}{*}{}
+	\DeclareGraphicsRule{.2}{mps}{*}{}
+	\DeclareGraphicsRule{.3}{mps}{*}{}
+	\DeclareGraphicsRule{.4}{mps}{*}{}
+	\DeclareGraphicsRule{.5}{mps}{*}{}
+	\DeclareGraphicsRule{.6}{mps}{*}{}
+	\DeclareGraphicsRule{.7}{mps}{*}{}
+	\DeclareGraphicsRule{.8}{mps}{*}{}
+	\DeclareGraphicsRule{.9}{mps}{*}{}
+	\DeclareGraphicsRule{.10}{mps}{*}{}
+	\DeclareGraphicsRule{.11}{mps}{*}{}
+	\DeclareGraphicsRule{.12}{mps}{*}{}
+	\DeclareGraphicsRule{.13}{mps}{*}{}
+	\DeclareGraphicsRule{.14}{mps}{*}{}
+	\DeclareGraphicsRule{.15}{mps}{*}{}
+	\DeclareGraphicsRule{.16}{mps}{*}{}
+	\DeclareGraphicsRule{.17}{mps}{*}{}
+	\DeclareGraphicsRule{.18}{mps}{*}{}
+	\DeclareGraphicsRule{.19}{mps}{*}{}
+	\DeclareGraphicsRule{.20}{mps}{*}{}
 \fi
