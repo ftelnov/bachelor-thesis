@@ -84,8 +84,10 @@
 \RequirePackage{algorithmicx}
 \RequirePackage{algpseudocode}
 
-%% Абзацный отступ по ГОСТу - пять букв. Это примерно столько.
+\newcommand{\banhyphens}{\hyphenpenalty=10000\exhyphenpenalty=10000{}}
+\banhyphens
 
+%% Абзацный отступ по ГОСТу - пять букв. Это примерно столько.
 \setlength{\parindent}{1.25cm}
 
 %% Перечисления по умолчанию слишком разрежены.
@@ -581,7 +583,6 @@
 \newcommand{\sectionW}{2.2em}
 \newcommand{\subsectionW}{2.6em}
 
-\newcommand{\banhyphens}{\hyphenpenalty=10000\exhyphenpenalty=10000{}}
 
 \AtBeginDocument{
 	%% Длина "приложения" нормально определяется только теперь
