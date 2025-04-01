@@ -84,18 +84,23 @@
 \RequirePackage{algorithmicx}
 \RequirePackage{algpseudocode}
 
+%% Абзацный отступ по ГОСТу - пять букв. Это примерно столько.
+
+\setlength{\parindent}{1.25cm}
+
 %% Перечисления по умолчанию слишком разрежены.
 
 \RequirePackage{enumitem}
-\setlist{nosep}
+\setlist[enumerate]{
+	nosep,
+	leftmargin=0pt,       % Align with left margin
+	labelindent=\parindent, % Match paragraph's first-line indentation
+	itemindent=*          % Let LaTeX calculate item indent
+}
 
 %% Полуторный межстрочный интервал
 \RequirePackage{setspace}
 \onehalfspacing
-
-%% Абзацный отступ по ГОСТу - пять букв. Это примерно столько.
-
-\setlength{\parindent}{1.25cm}
 
 %% Не используем буллеты.
 
@@ -537,7 +542,7 @@
 \RequirePackage{titletoc}
 
 \setcounter{secnumdepth}{3}
-\titleformat{\chapter}[block]{\normalsize\bfseries\center}{\@chaptername~\thechapter.~}%
+\titleformat{\chapter}[block]{\normalsize\bfseries\center}{\thechapter.~}%
 {0pt}{\begin{MakeUppercase}}[\end{MakeUppercase}\thispagestyle{\TheOnlyTruePageStyle}]
 \titlespacing{\chapter}{0pt}{-30pt}{0pt}
 \titleformat{\section}[block]{\normalsize\bfseries\center}{\thesection.~}{0pt}{}
