@@ -104,6 +104,8 @@
 \RequirePackage{setspace}
 \onehalfspacing
 
+\graphicspath{ {./images/} }
+
 %% Не используем буллеты.
 
 \renewcommand\labelitemi{---}
