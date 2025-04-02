@@ -580,11 +580,11 @@
 %%
 \renewcommand{\thechapter}{\@appendixcounter}
 \titleformat{\chapter}[block]{\normalsize\bfseries\center\stepcounter{appendix}}%
-{\@appendixname~\thechapter.~}{0pt}{\begin{MakeUppercase}}[\end{MakeUppercase}\thispagestyle{\TheOnlyTruePageStyle}]
+{\@appendixname~\thechapter~}{0pt}{\begin{MakeUppercase}}[\end{MakeUppercase}\thispagestyle{\TheOnlyTruePageStyle}]
 	\titlecontents{chapter}
 	[\appendixPrefix]
 	{}
-	{\contentslabel[\@appendixname~\thecontentslabel.]{\the\appendixPrefix}}
+	{\contentslabel[\@appendixname~\thecontentslabel]{\the\appendixPrefix}}
 	{\hspace*{-\the\appendixPrefix}}
 	{\titlerule*[0.5pc]{.}\contentspage}
 }
@@ -617,19 +617,19 @@
 \titlecontents{chapter}
 [\chapterPrefix]
 {}
-{\contentslabel[\thecontentslabel.]{\chapterW}}
+{\contentslabel[\thecontentslabel]{\chapterW}}
 {\hspace*{-\chapterW}}
 {\titlerule*[0.5pc]{.}\contentspage}
 \titlecontents{section}
 [\sectionPrefix]
 {}
-{\contentslabel[\thecontentslabel.]{\sectionW}}
+{\contentslabel[\thecontentslabel]{\sectionW}}
 {\hspace*{-\sectionW}}
 {\titlerule*[0.5pc]{.}\contentspage}
 \titlecontents{subsection}
 [\subsectionPrefix]
 {}
-{\contentslabel[\thecontentslabel.]{\subsectionW}~}
+{\contentslabel[\thecontentslabel]{\subsectionW}~}
 {\hspace*{-\subsectionW}}
 {\titlerule*[0.5pc]{.}\contentspage}
 
