@@ -662,6 +662,10 @@
 	\chapter*{\@conclusionname}\label{chapter:conclusion}%
 	\addcontentsline{toc}{chapter}{\@conclusionname}}
 
+\newcommand{\startsourcespage}{%
+	\chapter*{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}\label{chapter:sources}%
+	\addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}}
+
 %% Титульная страница
 
 \newcommand{\hfilll}{\hspace{0pt plus 1filll}}
