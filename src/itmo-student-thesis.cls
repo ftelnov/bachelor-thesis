@@ -544,15 +544,26 @@
 \RequirePackage{titletoc}
 
 \setcounter{secnumdepth}{3}
-\titleformat{\chapter}[block]{\normalsize\bfseries\center}{\thechapter.~}%
-{0pt}{\begin{MakeUppercase}}[\end{MakeUppercase}\thispagestyle{\TheOnlyTruePageStyle}]
-\titlespacing{\chapter}{0pt}{-30pt}{0pt}
-\titleformat{\section}[block]{\normalsize\bfseries\center}{\thesection.~}{0pt}{}
-\titlespacing{\section}{0pt}{0pt}{0pt}
-\titleformat{\subsection}[block]{\normalsize\bfseries\center}{\thesubsection.~}{0pt}{}
-\titlespacing{\subsection}{0pt}{0pt}{0pt}
-\titleformat{\subsubsection}[block]{\normalsize\bfseries\center}{\thesubsubsection.~}{0pt}{}
-\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+
+\newif\ifleftaligned
+
+\titleformat{\chapter}[block]
+{\normalsize\bfseries\unless\ifleftaligned\center\fi}
+{\thechapter~}%
+{0pt}
+{\indent\begin{MakeUppercase}}
+	[\end{MakeUppercase}\thispagestyle{\TheOnlyTruePageStyle}]
+\titlespacing{\chapter}{\ifleftaligned\parindent\else0pt\fi}{-30pt}{0pt}
+
+\titleformat{\section}[block]{\normalsize\bfseries}{\thesection~}{0pt}{}
+\titlespacing{\section}{\parindent}{0pt}{0pt}
+
+\titleformat{\subsection}[block]{\normalsize\bfseries}{\thesubsection~}{0pt}{}
+\titlespacing{\subsection}{\parindent}{0pt}{0pt}
+
+\titleformat{\subsubsection}[block]{\normalsize\bfseries}{\thesubsubsection~}{0pt}{}
+\titlespacing{\subsubsection}{\parindent}{0pt}{0pt}
+
 
 %% \appendix начинает приложения, которые должны правильно именоваться.
 
