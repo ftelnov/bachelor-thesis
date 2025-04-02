@@ -684,7 +684,9 @@
 
 \newcommand{\theuniversity@ru}{{\small\bfseries Министерство науки и высшего образования Российской Федерации\par
 			{\scriptsize \MakeUppercase{федеральное государственное автономное образовательное учреждение высшего образования}}\par
-			\begin{singlespace}\MakeUppercase{<<Национальный исследовательский университет ИТМО>>}\end{singlespace}}}
+			\begin{singlespace}\MakeUppercase{<<Национальный исследовательский университет ИТМО>>}\end{singlespace}
+			\begin{singlespace}(Университет ИТМО)\end{singlespace}
+		}}
 
 \newcommand{\theuniversity@en}{{\small\bfseries Ministry of Science and Higher Education of the Russian Federation\par
 			\MakeUppercase{ITMO University}}}
@@ -929,7 +931,7 @@
 \newcommand{\@strings@ThesisSupervisor}{\@iflfe{\@strings@ThesisSupervisor@en}{\@strings@ThesisSupervisor@ru}}
 
 \newcommand{\@strings@ThesisSupervisorLong@en}{Thesis supervisor}
-\newcommand{\@strings@ThesisSupervisorLong@ru}{Руководитель ВКР}
+\newcommand{\@strings@ThesisSupervisorLong@ru}{Руководитель в ИТМО}
 \newcommand{\@strings@ThesisSupervisorLong}{\@iflfe{\@strings@ThesisSupervisorLong@en}{\@strings@ThesisSupervisorLong@ru}}
 
 \newcommand{\@strings@APPROVED@en}{APPROVED}
@@ -1088,16 +1090,20 @@
 \newcommand{\typeoutTitlePage}{\begin{titlepage}
 		\banhyphens
 		\begin{center}\theuniversity\end{center}
+		\begin{center}\textbf{Факультет Прикладной информатики}\end{center}
+		\textbf{Образовательная программа:} Программирование в инфокоммуникационных системах\\
+		\textbf{Направление подготовки (специальность):} 11.03.02 — Инфокоммуникационные технологии и системы связи
+
 		\vspace{0cm plus 0.66fill minus 0cm}
-		{\centering\bfseries\MakeUppercase{\@strings@ThesisName}\par}
-		\vspace{0cm plus 0.66fill minus 0cm}
-		{\centering\MakeUppercase{\thetitle}\par}
+		\begin{center}О Т Ч Е Т\end{center}
+		\begin{center}\textbf{по производственной, технологической (проектно-технологической) практике}\end{center}
+		\begin{center}\textbf{Тема: \thetitle}\end{center}
 		\vspace{0cm plus 1fill minus 0cm}
 		{\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.5}
 			\noindent\hspace*{0.5\textwidth}\begin{minipage}[t]{0.5\textwidth}
-				\@strings@Author: \theauthor\par
-				\@strings@ThesisSupervisorLong: \thesupervisor \par
-				Куратор: \thecurator \par
+				\@strings@Author: \theauthor \\
+				\@strings@ThesisSupervisorLong: \thesupervisor \\
+				Куратор: \thecurator \\
 			\end{minipage}
 		}
 		\vspace{0cm plus 1fill minus 0cm}
