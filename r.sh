@@ -10,6 +10,4 @@ cp -r ../src ./$ITEM
 cd $ITEM
 
 xelatex --halt-on-error $ITEM
-biber $ITEM
-xelatex --halt-on-error $ITEM
 xelatex --halt-on-error $ITEM

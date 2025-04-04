@@ -126,6 +126,12 @@
 \renewcommand\labelenumii{\arabic{enumii})}
 \renewcommand\theenumii{\arabic{enumii}}
 
+\RequirePackage{nameref}
+\newcommand{\customlabel}[2]{%
+	\def\@currentlabelname{#2}% Set the custom text
+	\label{#1}% Create the label
+}
+
 \newcommand{\@iflfe}[2]{#1}
 
 \newcommand*{\@tablecontinuation}[1]{Table~#1, continued}
